@@ -3,7 +3,7 @@ var currentHour = dayjs().format("H");
 var today = $("#current-day");
 var currentDay = dayjs().format("dddd, MMM D, YYYY");
 today.text(currentDay);
-$("#current-hour").text(currentHour);
+// $("#current-hour").text(currentHour);
 
 function init() {
   buildHourBlocks();
@@ -59,7 +59,7 @@ function applyHourBlockColor() {
 
 $(document).ready(function() {
   init();
-  setInterval(applyHourBlockColor, 1000);
+  setInterval(applyHourBlockColor(), 1000);
 
   $(".time-block .saveBtn").on("click", function () {
     var textAreaID = $(this).parents(".time-block").attr("id");

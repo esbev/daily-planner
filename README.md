@@ -7,43 +7,36 @@ type stuff here
 ## Table of Contents
 - [Website Preview](#website-preview)
 - [Credits](#credits)
-    - [JavaScript Resources](#javascript-resources)
-        - [Instructor Aided Code](#instructor-aided-code)
-        - [Quiz Questions](#quiz-questions)
-        - [W3schools.com](#w3schoolscom)
-        - [Mozilla.org](#mozillaorg)
+    - [Resources](#resources)
+        - [Code Execution](#code-execution)
+        - [Jquery.com](#jquerycom)
+        - [Getbootstrap.com](#getboostrapcom)
 - [Special Thanks](#special-thanks)
 - [License](#license)
 
 ## Website Preview
 
-[Password Generator](https://esbev.github.io/Coding-Quiz/)
+[Daily Planner](https://esbev.github.io/daily-planner/)
 
-[![name](assets/images/SS.jpg)](https://esbev.github.io/Coding-Quiz/)
+[![name](assets/images/SS.jpg)](https://esbev.github.io/daily-planner/)
 
 ## Credits
 
 NOTE: Click on a thumbnail to view source
 
-- ### JavaScript Resources
+- ### Resources
 
-    - #### Instructor Aided Code
+    - #### Code Execution
 
-        Instructor Eli Montoya provided a snippet of example code I followed very closely for a portion of this project
+        Bootcamp student Joshua Stanford aided in providing some ideas for running the project and collaborated with some coding to aid me in execution.
 
-     - ![name](assets/images/highscores.jpg)
+    - #### Jquery.com
 
-    - #### Quiz Questions
+     - [![name](assets/images/jquery.jpg)](https://api.jquery.com/)
 
-        Bootcamp student Joshua Stanford aided in providing the quiz questions I used for the project
+    - #### Getboostrap.com
 
-    - #### W3schools.com
-
-     - [![name](assets/images/w3schools.jpg)](https://www.w3schools.com/js/default.asp)
-
-    - #### Mozilla.org
-
-     - [![name](assets/images/mozilla.jpg)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference)
+     - [![name](assets/images/bootstrap.jpg)](https://getbootstrap.com/)
 
 
 ## Special Thanks
