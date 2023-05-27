@@ -2,7 +2,7 @@ const currentHour = dayjs().hour();
 var today = $("#current-day");
 var currentDay = dayjs().format("dddd, MMM D, YYYY");
 today.text(currentDay);
-$("#current-hour").text(currentHour);
+// $("#current-hour").text(currentHour);
 
 function init() {
   buildHourBlocks();
