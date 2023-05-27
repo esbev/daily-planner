@@ -3,7 +3,7 @@ var currentHour = dayjs().format("H");
 var today = $("#current-day");
 var currentDay = dayjs().format("dddd, MMM D, YYYY");
 today.text(currentDay);
-// $("#current-hour").text(currentHour);
+$("#current-hour").text(currentHour);
 
 function init() {
   buildHourBlocks();
@@ -12,9 +12,9 @@ function init() {
 
 function buildHourBlocks() {
   var hourBlockID = 9;
-  var timeBlocksText = [9,10,11,12,1,2,3,4,5];
-  for (i in timeBlocksText) {
-    var timeBlockTime = timeBlocksText[i];
+  var timeBlocksLabel = [9,10,11,12,1,2,3,4,5];
+  for (i in timeBlocksLabel) {
+    var timeBlockTime = timeBlocksLabel[i];
     if (i <= 2) {
       timeBlockTime += "AM";
     } else {
@@ -22,7 +22,7 @@ function buildHourBlocks() {
     }
 
     var hourBlockEl = "";
-    hourBlockEl += '<div id="hour-' + hourBlockID + '" class="row time-block">';
+    hourBlockEl += '<div id=\"hour-' + hourBlockID + '\" class=\"row time-block\">';
     hourBlockEl += '<div class="col-2 col-md-1 hour text-center py-3">' + timeBlockTime + "</div>";
     hourBlockEl += '<textarea class="col-8 col-md-10 description" rows="3"></textarea>';
     hourBlockEl += '<button class="btn saveBtn col-2 col-md-1" aria-label="save">';
@@ -51,7 +51,7 @@ function applyHourBlockColor() {
       $(this).addClass("past");
     } else if (hourID == currentHour) {
       $(this).addClass("present");
-    } else {
+    } else if (hourID > currentHour){
       $(this).addClass("future");
     }
   })
