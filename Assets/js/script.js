@@ -1,5 +1,4 @@
-var hourBlockAreaText;
-var currentHour = dayjs().format("H");
+const currentHour = dayjs().hour();
 var today = $("#current-day");
 var currentDay = dayjs().format("dddd, MMM D, YYYY");
 today.text(currentDay);
@@ -35,7 +34,7 @@ function buildHourBlocks() {
 }
 
 function populateTextAreas() {
-  hourBlockAreaText = {...localStorage};
+  var hourBlockAreaText = {...localStorage};
   for (i in hourBlockAreaText) {
     $(".time-block").each(function () {
       var content = hourBlockAreaText[$(this).attr("id")];
